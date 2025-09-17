@@ -1,0 +1,46 @@
+/* =======================================================
+GLOBAL STYLES
+======================================================= */
+
+:root {
+
+    /* Style Guide-Color */
+    --color-green: #54e6af;
+    --color-blue950: #121725;
+    --color-blue900: #2c344b;
+    --color-blue600: #5a668a;
+    --color-blue300: #c2cbe5;
+    --color-white: #ffffff;
+    --color-red: #fb3e3e;
+
+    /* Font Families */
+    --font-chivo: "Chivo", sans-serif;
+
+    /* Font Sizes */
+    --font-size-xl: 48px;
+    --font-size-sm: 18px;
+    --font-size-xs: 14px;
+
+    /* Line Heights */
+    --line-height-xxl: 200%;
+    --line-height-xl: 150%;
+    --line-height-lg: 120%;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-bold: 600;
+}
+
+/* =======================================================
+MOBILE STYLES
+======================================================= */
+
+/* =======================================================
+TABLET STYLES
+======================================================= */
+@media (min-width: 500px) {}
+
+/* =======================================================
+DESKTOP STYLES
+========================================================*/
+@media (min-width: 1024px) {}
