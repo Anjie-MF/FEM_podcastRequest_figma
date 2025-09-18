@@ -34,6 +34,24 @@ GLOBAL STYLES
 /* =======================================================
 MOBILE STYLES
 ======================================================= */
+body {
+    background-image: url(/assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    outline: 1px solid red;
+}
+
+header {
+    outline: 3px solid white;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
 
 /* =======================================================
 TABLET STYLES
