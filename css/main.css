@@ -17,9 +17,10 @@ GLOBAL STYLES
     --font-chivo: "Chivo", sans-serif;
 
     /* Font Sizes */
-    --font-size-xl: 48px;
-    --font-size-sm: 18px;
-    --font-size-xs: 14px;
+    --font-size-xl: 3rem;
+    --font-size-sm: 1.125rem;
+    --font-size-xs: 0.875rem;
+    --font-size-md: 2rem;
 
     /* Line Heights */
     --line-height-xxl: 200%;
@@ -27,14 +28,24 @@ GLOBAL STYLES
     --line-height-lg: 120%;
 
     /* Font Weights */
-    --font-weight-light: 300;
+    --font-weight-light: 100;
     --font-weight-bold: 600;
 }
 
 /* =======================================================
 MOBILE STYLES
 ======================================================= */
+html,
 body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: var(--font-chivo);
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,16 +53,43 @@ body {
 
 main {
     outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.9375rem;
 }
 
-header {
-    outline: 3px solid white;
+.hero-title {
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-lg);
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    outline: 1px solid yellow;
+    color: var(--color-white);
+}
+
+span {
+    color: var(--color-green);
 }
 
 .visually-hidden {
     position: absolute;
     left: -9999px;
 }
+
+.podcast-text {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-xl);
+    color: var(--color-blue300);
+    outline: 1px solid orange;
+}
+
+.podcast-icons {
+    outline: 1px solid white;
+}
+
+
 
 /* =======================================================
 TABLET STYLES
