@@ -45,18 +45,29 @@ body {
 body {
     display: grid;
     place-items: center;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
     font-family: var(--font-chivo);
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    outline: 1px solid orange;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 main {
-    outline: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.9375rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
 }
 
 .hero-title {
@@ -64,8 +75,8 @@ main {
     line-height: var(--line-height-lg);
     font-size: var(--font-size-md);
     text-transform: uppercase;
-    outline: 1px solid yellow;
     color: var(--color-white);
+    text-align: center;
 }
 
 span {
@@ -82,13 +93,40 @@ span {
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-xl);
     color: var(--color-blue300);
-    outline: 1px solid orange;
+    text-align: center;
+    margin-bottom: 1.25rem;
 }
 
 .podcast-icons {
-    outline: 1px solid white;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1.25rem;
 }
 
+#email-input {
+    outline: 1px dotted black;
+    margin-bottom: 0.3125rem;
+    /* background-color: ;
+     color: ;
+    border: ;
+    padding: ;
+    font-size: ; */
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button {
+    outline: 1px ridge red;
+    font-family: var(--font-chivo);
+    background-color: var(--color-green);
+    color: var(--color-blue950);
+    /* border: ; */
+    padding: 10px;
+    /* font-size: ; */
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+}
 
 
 /* =======================================================
