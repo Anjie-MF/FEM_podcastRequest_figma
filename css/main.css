@@ -49,7 +49,7 @@ body {
     font-family: var(--font-chivo);
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     margin: 0;
     padding-top: 55px;
 }
@@ -101,9 +101,7 @@ span {
 #email-input {
     outline: 1px dotted black;
     margin-bottom: 0.3125rem;
-    /* background-color: ;
-     color: ;
-    border: ;*/
+    background-color: var(--color-blue600);
     padding: 10px;
     /* font-size: ;  */
     border-radius: 30px;
@@ -111,12 +109,16 @@ span {
     width: 100%;
 }
 
+input::placeholder {
+    color: var(--color-white);
+    opacity: 1;
+}
+
 button {
     outline: 1px ridge red;
     font-family: var(--font-chivo);
     background-color: var(--color-green);
     color: var(--color-blue950);
-    /* border: ; */
     padding: 10px;
     /* font-size: ; */
     border-radius: 30px;
