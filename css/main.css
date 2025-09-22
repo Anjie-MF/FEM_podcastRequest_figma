@@ -49,7 +49,9 @@ body {
     font-family: var(--font-chivo);
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
     margin: 0;
     padding-top: 55px;
 }
@@ -103,7 +105,6 @@ span {
     margin-bottom: 0.3125rem;
     background-color: var(--color-blue600);
     padding: 10px;
-    /* font-size: ;  */
     border-radius: 30px;
     cursor: pointer;
     width: 100%;
@@ -115,12 +116,10 @@ input::placeholder {
 }
 
 button {
-    outline: 1px ridge red;
     font-family: var(--font-chivo);
     background-color: var(--color-green);
     color: var(--color-blue950);
     padding: 10px;
-    /* font-size: ; */
     border-radius: 30px;
     cursor: pointer;
     width: 100%;
