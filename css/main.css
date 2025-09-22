@@ -44,30 +44,25 @@ body {
 
 body {
     display: grid;
-    place-items: center;
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr); */
+    justify-items: center;
+    align-content: start;
     font-family: var(--font-chivo);
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 0;
+    padding-top: 55px;
 }
 
 header {
-    outline: 1px solid orange;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    padding-bottom: 25px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
-    margin: 1.25rem;
+    margin: 0px 20px;
 }
 
 .hero-title {
@@ -108,11 +103,12 @@ span {
     margin-bottom: 0.3125rem;
     /* background-color: ;
      color: ;
-    border: ;
-    padding: ;
-    font-size: ; */
+    border: ;*/
+    padding: 10px;
+    /* font-size: ;  */
     border-radius: 30px;
     cursor: pointer;
+    width: 100%;
 }
 
 button {
