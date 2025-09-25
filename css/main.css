@@ -56,6 +56,10 @@ body {
     padding-top: 55px;
 }
 
+.background-image-tablet {
+    display: none;
+}
+
 header {
     padding-bottom: 25px;
 }
@@ -136,7 +140,60 @@ button {
 /* =======================================================
 TABLET STYLES
 ======================================================= */
-@media (min-width: 500px) {}
+@media (min-width: 500px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: none;
+        background-color: var(--color-blue900);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+    }
+
+    .background-image-tablet {
+        display: block;
+        background-image: url(/assets/tablet/image-host.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-column: 4/5;
+        grid-row: 1/4;
+        z-index: -1;
+    }
+
+    header {
+        outline: 1px solid red;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main {
+        outline: 1px solid yellow;
+        background-color: var(--color-blue900);
+        grid-column: 1/ span 3;
+        grid-row: 2;
+    }
+
+    .form-group {
+        outline: 1px solid white;
+    }
+
+    .accent-image {
+        background-image: url(/assets/desktop/bg-pattern-dots.svg);
+        grid-column: 4;
+        grid-row: 3;
+        width: 125px;
+        height: 104px;
+    }
+}
 
 /* =======================================================
 DESKTOP STYLES
