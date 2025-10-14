@@ -67,10 +67,6 @@ main {
     align-items: center;
     margin: 0px 20px;
 }
-/* 
-main img {
-    display: none;
-} */
 
 .hero-title {
     font-weight: var(--font-weight-light);
@@ -146,11 +142,12 @@ TABLET STYLES
     body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         background-image: url(/assets/tablet/image-host.jpg);
-        background-size: 75% 100%;
+        background-size: 70% 90%;
         background-position: right top;
         background-repeat: no-repeat;
+        background-color: var(--color-blue900);
     }
 
     header {
@@ -159,27 +156,31 @@ TABLET STYLES
     }
 
     main {
-        grid-column: 1 / -1;
-        grid-row: 2;
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        background-color: var(--color-blue900);
+        outline: 1px solid white;
     }
 
     .text-content {
         grid-column: 1 / span 2;
         grid-row: 2;
+        outline: red 1px solid;
     }
 
     .email-form {
         grid-column: 1 / span 2;
         grid-row: 3;
+        outline: yellow 1px solid;
     }
 
     .podcast-icons {
         grid-column: 1 / span 2;
         grid-row: 4;
-        background-color: yellow;
+        outline: 1px solid purple
     }
 
     .accent-image {
@@ -188,6 +189,7 @@ TABLET STYLES
         grid-row: 4;
         width: 125px;
         height: 104px;
+        outline: 1px solid white;
     }
 
 }
