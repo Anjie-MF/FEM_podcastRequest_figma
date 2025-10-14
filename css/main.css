@@ -47,6 +47,7 @@ body {
     justify-items: center;
     align-content: start;
     font-family: var(--font-chivo);
+    margin: 0px 20px;
     background-image: url(/assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -54,10 +55,6 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding-top: 55px;
-}
-
-.background-image-tablet {
-    display: none;
 }
 
 header {
@@ -70,6 +67,10 @@ main {
     align-items: center;
     margin: 0px 20px;
 }
+/* 
+main img {
+    display: none;
+} */
 
 .hero-title {
     font-weight: var(--font-weight-light);
@@ -142,57 +143,53 @@ TABLET STYLES
 ======================================================= */
 @media (min-width: 500px) {
 
-    html,
     body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background-image: none;
-        background-color: var(--color-blue900);
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr auto;
-        min-height: 100vh;
-    }
-
-    .background-image-tablet {
-        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
         background-image: url(/assets/tablet/image-host.jpg);
+        background-size: 75% 100%;
+        background-position: right top;
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        grid-column: 4/5;
-        grid-row: 1/4;
-        z-index: -1;
     }
 
     header {
-        outline: 1px solid red;
         grid-column: 1;
         grid-row: 1;
     }
 
     main {
-        outline: 1px solid yellow;
-        background-color: var(--color-blue900);
-        grid-column: 1/ span 3;
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .text-content {
+        grid-column: 1 / span 2;
         grid-row: 2;
     }
 
-    .form-group {
-        outline: 1px solid white;
+    .email-form {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .podcast-icons {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        background-color: yellow;
     }
 
     .accent-image {
         background-image: url(/assets/desktop/bg-pattern-dots.svg);
-        grid-column: 4;
-        grid-row: 3;
+        grid-column: 3;
+        grid-row: 4;
         width: 125px;
         height: 104px;
     }
+
 }
 
 /* =======================================================
