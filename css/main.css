@@ -162,25 +162,34 @@ TABLET STYLES
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto auto;
         background-color: var(--color-blue900);
-        outline: 1px solid white;
+
+        /* outline: 1px solid white; */
     }
 
     .text-content {
         grid-column: 1 / span 2;
         grid-row: 2;
-        outline: red 1px solid;
+        /* outline: red 1px solid; */
     }
 
     .email-form {
         grid-column: 1 / span 2;
         grid-row: 3;
-        outline: yellow 1px solid;
+        /* outline: yellow 1px solid; */
+    }
+
+    #email-input {
+        outline: 3px solid white;
+    }
+
+    button {
+        outline: 3px solid red;
     }
 
     .podcast-icons {
         grid-column: 1 / span 2;
         grid-row: 4;
-        outline: 1px solid purple
+        /* outline: 1px solid purple */
     }
 
     .accent-image {
