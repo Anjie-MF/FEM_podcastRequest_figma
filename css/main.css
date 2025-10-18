@@ -83,7 +83,13 @@ span {
 
 .visually-hidden {
     position: absolute;
-    left: -9999px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .podcast-text {
@@ -102,7 +108,6 @@ span {
 }
 
 #email-input {
-    outline: 1px dotted black;
     margin-bottom: 0.3125rem;
     background-color: var(--color-blue600);
     padding: 10px;
@@ -126,6 +131,19 @@ button {
     cursor: pointer;
     width: 100%;
     border: none;
+}
+
+.error-message {
+    color: var(--color-red);
+}
+
+.email-form.has-error .form-group {
+    border: 3px solid var(--color-red);
+    padding: 1px;
+}
+
+.email-form.has-error #email-input::placeholder {
+    color: var(--color-red);
 }
 
 
@@ -189,19 +207,27 @@ TABLET STYLES
 
     .form-group {
         display: flex;
-        justify-content: flex-end;
-        border: 3px solid white;
         border-radius: 20px;
-        padding: 10px;
+        margin: 3px;
+        background-color: var(--color-blue600);
+        width: 400px;
     }
 
     #email-input {
-        outline: 1px solid purple;
         flex-grow: 1;
+        border: none;
+        min-width: 200px;
+    }
+
+    #email-input::placeholder {
+        color: var(--color-white);
+        border: none;
     }
 
     button {
-        outline: 1px dotted red;
+        font-weight: var(--font-weight-bold);
+        flex-shrink: 0;
+        width: 150px;
     }
 
     .podcast-icons {
