@@ -142,12 +142,13 @@ TABLET STYLES
     body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 1fr 1fr;
         background-image: url(/assets/tablet/image-host.jpg);
-        background-size: 70% 90%;
+        background-size: 60% 90%;
         background-position: right top;
         background-repeat: no-repeat;
         background-color: var(--color-blue900);
+        min-height: 100vh;
     }
 
     header {
@@ -157,48 +158,48 @@ TABLET STYLES
 
     main {
         grid-column: 1 / span 2;
-        grid-row: 2 / 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-row: 2;
         background-color: var(--color-blue900);
-
-        /* outline: 1px solid white; */
+        display: grid;
+        grid-template-rows: auto auto auto;
+        height: 75vh;
+        margin: 20px;
+        gap: 1.5rem;
     }
 
     .text-content {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-        /* outline: red 1px solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 1rem;
+        justify-self: start;
+    }
+
+    .hero-title,
+    .podcast-text {
+        text-align: left;
     }
 
     .email-form {
-        grid-column: 1 / span 2;
-        grid-row: 3;
-        /* outline: yellow 1px solid; */
-    }
-
-    #email-input {
-        outline: 3px solid white;
-    }
-
-    button {
-        outline: 3px solid red;
+        outline: red solid 1px;
+        justify-self: start;
+        grid-row: 2;
     }
 
     .podcast-icons {
-        grid-column: 1 / span 2;
-        grid-row: 4;
-        /* outline: 1px solid purple */
+        outline: white solid 1px;
+        grid-row: 3;
+        justify-self: start;
     }
 
     .accent-image {
+        width: 95px;
+        height: 95px;
         background-image: url(/assets/desktop/bg-pattern-dots.svg);
-        grid-column: 3;
-        grid-row: 4;
-        width: 125px;
-        height: 104px;
-        outline: 1px solid white;
+        margin: 0;
+        justify-self: end;
+        grid-row: 3;
     }
 
 }
