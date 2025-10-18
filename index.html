@@ -33,12 +33,13 @@
       <a href="#"><img src="./assets/desktop/spotify.svg" alt="Spotify Podcast"></a>
     </div>
     <div class="accent-image"></div>
-    <form class="email-form">
+    <form class="email-form" novalidate>
       <div class="form-group">
         <label for="email-input" class="visually-hidden">Email address</label>
-        <input type="email" id="email-input" placeholder="monica@mail.com" required>
+        <input type="email" id="email-input" placeholder="Email address" required>
         <button type="submit">Request access</button>
       </div>
+      <p class="error-message visually-hidden">Oops, please check your email address</p>
     </form>
   </main>
 </body>
