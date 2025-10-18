@@ -155,20 +155,22 @@ TABLET STYLES
     body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         background-image: url(/assets/tablet/image-host.jpg);
-        background-size: 60% 90%;
-        background-position: right top;
+        background-size: 490px auto;
+        background-position: top right;
         background-repeat: no-repeat;
         background-color: var(--color-blue900);
         min-height: 100vh;
+        padding: 0;
+        margin: 0;
     }
 
     header {
         grid-column: 1;
         grid-row: 1;
         justify-self: start;
-        margin: 3rem;
+        margin: 3.25rem 3.5rem 0 3.5rem;
     }
 
     main {
@@ -176,8 +178,8 @@ TABLET STYLES
         grid-row: 2;
         background-color: var(--color-blue900);
         display: grid;
-        grid-template-rows: auto auto auto;
-        height: 75vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
         margin: 3rem;
         gap: 1.5rem;
     }
@@ -198,25 +200,38 @@ TABLET STYLES
 
     .hero-title {
         font-size: var(--font-size-xl);
+        line-height: var(--line-height-lg);
+        margin-bottom: 24px;
+    }
+
+    .podcast-text {
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-xl);
+        margin-bottom: 40px;
     }
 
     .email-form {
-        justify-self: start;
         grid-row: 2;
+        margin-bottom: 2rem;
     }
 
     .form-group {
         display: flex;
-        border-radius: 20px;
-        margin: 3px;
+        border-radius: 28px;
+        margin: 0;
         background-color: var(--color-blue600);
-        width: 400px;
+        width: 427px;
+        padding: 5px 5px 5px 32px;
     }
 
     #email-input {
         flex-grow: 1;
         border: none;
         min-width: 200px;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        font-size: 0.875rem;
     }
 
     #email-input::placeholder {
@@ -227,21 +242,25 @@ TABLET STYLES
     button {
         font-weight: var(--font-weight-bold);
         flex-shrink: 0;
-        width: 150px;
+        width: 162px;
+        padding: 9px 0;
     }
 
     .podcast-icons {
-        outline: white solid 1px;
         grid-row: 3;
-        justify-self: start;
+        margin: 0 0 2.5rem 0;
+        display: flex;
+        gap: 2rem;
     }
 
     .accent-image {
-        width: 95px;
-        height: 95px;
+        width: 232px;
+        height: 104px;
         background-image: url(/assets/desktop/bg-pattern-dots.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
         margin: 0;
-        justify-self: end;
+        grid-column: 3;
         grid-row: 3;
     }
 
