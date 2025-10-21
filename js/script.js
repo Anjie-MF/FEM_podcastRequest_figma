@@ -11,9 +11,10 @@ emailForm.addEventListener("submit", function (event) {
         emailForm.classList.add("has-error");
         errorMessage.classList.remove("visually-hidden");
     } else {
-        emailInput.placeholder = "Email address";
         emailForm.classList.remove("has-error");
         errorMessage.classList.add("visually-hidden");
+        emailInput.value = "";
+        emailInput.placeholder = "Email address"; 
     }
 });
 
