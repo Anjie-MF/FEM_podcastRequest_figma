@@ -21,10 +21,10 @@ emailForm.addEventListener("submit", function (event) {
     }
 });
 
-setTimeout(function () {
-    requestGranted.style.display = 'none';
-    requestGranted.innerText = 'Request access'; // reset text
-}, 3000);
+// setTimeout(function () {
+//     requestGranted.style.display = 'none';
+//     requestGranted.innerText = 'Request access'; 
+// }, 3000);
 
 
 emailInput.addEventListener("mouseover", function () {
