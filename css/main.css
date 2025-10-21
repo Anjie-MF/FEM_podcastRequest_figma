@@ -54,7 +54,6 @@ body {
     background-position: center top;
     background-attachment: fixed;
     margin: 0;
-    /* padding-top: 55px; */
 }
 
 header {
@@ -110,11 +109,12 @@ span {
 #email-input {
     margin-bottom: 0.3125rem;
     background-color: var(--color-blue600);
-    padding: 10px;
-    border-radius: 30px;
+    padding: 10px 16px;
+    border-radius: 10px;
     cursor: pointer;
     width: 100%;
     border: none;
+    outline: none;
 }
 
 input::placeholder {
@@ -133,19 +133,31 @@ button {
     border: none;
 }
 
+button::hover {
+    background-color: lightgreen;
+}
+
 .error-message {
     color: var(--color-red);
 }
 
 .email-form.has-error .form-group {
-    border: 3px solid var(--color-red);
+    border: 2px solid var(--color-red);
     padding: 1px;
+    background-color: var(--color-blue600);
 }
 
 .email-form.has-error #email-input::placeholder {
-    color: var(--color-red);
+    color: var(--color-white);
 }
 
+.success-message {
+    color: var(--color-green);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+    margin-top: 0.5rem;
+}
 
 /* =======================================================
 TABLET STYLES
@@ -178,7 +190,6 @@ TABLET STYLES
         z-index: 0;
     }
 
-
     header {
         grid-column: 1;
         grid-row: 1;
@@ -197,7 +208,6 @@ TABLET STYLES
         padding: 1rem;
         gap: 1.5rem;
     }
-
 
     .text-content {
         display: flex;
@@ -232,7 +242,7 @@ TABLET STYLES
 
     .form-group {
         display: flex;
-        border-radius: 28px;
+        border-radius: 18px;
         margin: 0;
         background-color: var(--color-blue600);
         width: 427px;
@@ -255,11 +265,6 @@ TABLET STYLES
         border: none;
         padding: 10px;
         font-weight: var(--font-weight-bold);
-    }
-
-    #email-input::focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(84, 230, 175, 0.3);
     }
 
     button {
