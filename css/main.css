@@ -174,7 +174,7 @@ TABLET STYLES
         background-size: contain;
         background-repeat: no-repeat;
         right: 0;
-        bottom: 265px;
+        bottom: 36vh;
         z-index: 0;
     }
 
@@ -193,7 +193,8 @@ TABLET STYLES
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
-        margin: 3rem;
+        margin: 1rem;
+        padding: 1rem;
         gap: 1.5rem;
     }
 
@@ -235,22 +236,30 @@ TABLET STYLES
         margin: 0;
         background-color: var(--color-blue600);
         width: 427px;
-        padding: 5px 5px 5px 32px;
+        padding: 10px;
+        gap: 10px;
     }
 
     #email-input {
         flex-grow: 1;
         border: none;
         min-width: 200px;
-        background-color: transparent;
         margin: 0;
         padding: 0;
         font-size: 0.875rem;
+        outline: none;
     }
 
     #email-input::placeholder {
         color: var(--color-white);
         border: none;
+        padding: 10px;
+        font-weight: var(--font-weight-bold);
+    }
+
+    #email-input::focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(84, 230, 175, 0.3);
     }
 
     button {
