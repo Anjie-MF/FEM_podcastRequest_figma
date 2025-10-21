@@ -23,6 +23,7 @@ emailForm.addEventListener("submit", function (event) {
 
 setTimeout(function () {
     requestGranted.style.display = 'none';
+    requestGranted.innerText = 'Request access'; // reset text
 }, 3000);
 
 
