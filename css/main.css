@@ -48,7 +48,7 @@ body {
     align-content: start;
     font-family: var(--font-chivo);
     margin: 0px 20px;
-    background-image: url(/assets/mobile/image-host.jpg);
+    background-image: url(../assets/mobile/image-host.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -168,7 +168,7 @@ TABLET STYLES
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        background-image: url(/assets/tablet/image-host.jpg);
+        background-image: url(../assets/tablet/image-host.jpg);
         background-size: 490px auto;
         background-position: top right;
         background-repeat: no-repeat;
@@ -182,7 +182,7 @@ TABLET STYLES
         position: absolute;
         width: 232px;
         height: 104px;
-        background-image: url(/assets/desktop/bg-pattern-dots.svg);
+        background-image: url(../assets/desktop/bg-pattern-dots.svg);
         background-size: contain;
         background-repeat: no-repeat;
         right: 0;
@@ -291,7 +291,7 @@ DESKTOP STYLES
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto;
-        background-image: url(/assets/desktop/image-host.jpg);
+        background-image: url(../assets/desktop/image-host.jpg);
         background-size: 75% auto;
         background-position: top right;
         background-repeat: no-repeat;
