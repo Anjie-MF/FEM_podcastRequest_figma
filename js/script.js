@@ -17,15 +17,9 @@ emailForm.addEventListener("submit", function (event) {
         errorMessage.classList.add("visually-hidden");
         successMessage.classList.remove("visually-hidden");
         emailInput.value = "";
-        requestGranted.innerText = "On the list";
+        requestGranted.innerText = "You're on the list!";
     }
 });
-
-// setTimeout(function () {
-//     requestGranted.style.display = 'none';
-//     requestGranted.innerText = 'Request access'; 
-// }, 3000);
-
 
 emailInput.addEventListener("mouseover", function () {
     emailInput.placeholder = "janedoe@gmail.com";
